@@ -1,0 +1,36 @@
+<div class="container accordion-container">            
+    <div class="accordion accordion-flush text-white w-100" id="accordionFlushExample">
+      {% for key, value in mails.items %}
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#flush-{{key}}"
+              aria-expanded="false"
+              aria-controls="flush-{{key}}"
+            >
+              To: {{value.envelope_to}}, From: {{value.from_parsed.0.name}} &nbsp; <span><a href="mailto:{{value.from_parsed.0.address}}">{{value.from_parsed.0.address}}</a></span>, Date: {{value.date}}
+            </button>
+          </h2>
+          <div
+            id="flush-{{key}}"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-heading{{key}}"
+            data-mdb-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              
+              {% autoescape off %}
+                  {{ value.text }}
+              {% endautoescape %}
+
+              <!-- <iframe src="{{value.html}}" title="W3Schools Free Online Web Tutorials"></iframe>  -->
+
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+</div>

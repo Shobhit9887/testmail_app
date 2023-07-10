@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="static/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/icon.png" />
+
+  <title>
+
+    TestMail Library - Send testing mails anytime, from anywhere.
+
+  </title>
+
+
+  <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+  <link href="static/css/toolkit-minimal.css" rel="stylesheet">
+  <link href="static/css/application-minimal.css" rel="stylesheet">
+  <link href="static/css/mdb.min.css" rel="stylesheet">
+  <link href="static/css/custom.css" rel="stylesheet">
+
+
+
+  <style>
+    /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+    /* this chunk of css is not part of the toolkit :) */
+    /* …curses ios, etc… */
+    @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+      body {
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+      }
+
+      #stage {
+        height: 1px;
+        overflow: auto;
+        min-height: 100vh;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .navbar {
+        position: inherit;
+        width: auto;
+      }
+
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <div class="container pt-4" id="top">
+
+    <!-- <nav class="navbar navbar-light navbar-toggleable-sm navbar-static-top text-uppercase app-navbar mb-5">
+    
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">GO TO TESTMAIL CONSOLE</a>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+    <nav class="navbar navbar-expand-lg navbar-light mb-5">
+      <div class="container-fluid text-white">
+        <button class="navbar-toggler navbar-toggler-right hidden-md-up" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mx-auto d-block d-sm-none" href="#">
+
+          <div id="brand" title="TM APP" class="d-block d-sm-none brand-centered">TM APP</div>
+        </a>
+
+        <a class="navbar-brand mx-auto d-none d-sm-none d-md-block" href="#">
+
+          <div id="brand" class="text-white" title="TESTMAIL APP">TESTMAIL APP</div>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link text-white" target="_blank" href="https://testmail.app/console">GO TO TESTMAIL CONSOLE
+                (ADMIN)</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+
+
+  <div class="container-fluid">
+    <div class="search container mb-4">
+      <form class="form-inline d-flex justify-content-center">
+        <label class="sr-only" for="inlineFormInputName2">Name</label>
+        <input type="text" class="form-control mb-2 mr-md-2 w-40" id="inlineFormInputName2"
+          placeholder="Enter your query here...">
+
+        <button type="submit" class="btn btn-success mb-2">Search</button>
+      </form>
+    </div>
+    {% include 'accordion.html' %}
+  </div>
+
+
+
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/tether.min.js"></script>
+  <script src="static/js/toolkit.js"></script>
+  <script src="static/js/mdb.min.js"></script>
+  <script src="static/js/application.js"></script>
+  <script type="text/javascript">
+
+  </script>
+</body>
+
+</html>
